@@ -1,0 +1,7 @@
+{
+  "name": "CodeBuddy AI ",
+  "description": "A beginner-friendly, cost-efficient AI programming tutor that teaches Java, Python, JS, HTML, and CSS with static lessons and on-demand AI assistance.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
