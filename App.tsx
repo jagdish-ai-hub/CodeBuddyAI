@@ -7,6 +7,7 @@ import { Playground } from './components/Playground';
 import { Profile } from './components/Profile';
 import { ChatBot } from './components/ChatBot';
 import { Trophy, Star, ChevronRight, Book, Award, Terminal, Image as ImageIcon, Sparkles, ArrowLeft, ScanLine, Globe, Zap, CheckCircle2, Construction } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 const STORAGE_KEY = 'codebuddy_progress_v2'; // Bumped version for new state fields
 
@@ -437,6 +438,7 @@ const App: React.FC = () => {
     <Layout currentScreen={state.currentScreen} onNavigate={handleNavigate}>
       {renderContent()}
       <ChatBot />
+      <Analytics />
     </Layout>
   );
 };
